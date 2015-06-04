@@ -33,7 +33,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
                                 <connections>
-                                    <action selector="amountBeforeTaxTextFieldChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="D6T-Bl-BFm"/>
+                                    <action selector="tipPercentageSliderValueChange:" destination="vXZ-lx-hvc" eventType="valueChanged" id="eok-YQ-hCq"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="Xc6-YJ-Ok2"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip %:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xh8-HH-wvE">

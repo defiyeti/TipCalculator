@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TipCalculatorViewController: UIViewController {
+class TipCalculatorViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var amountBeforeTaxTextField: UITextField!
     
@@ -47,9 +47,21 @@ class TipCalculatorViewController: UIViewController {
     }
     
     @IBAction func amountBeforeTaxTextFieldChanged(sender: AnyObject) {
-        println("text field value changed")
+        calcTip()
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField == amountBeforeTaxTextField {
+        textField.resignFirstResponder()
+        calcTip()
+        }
+        return true
+    }
+    @IBAction func tipPercentageSliderValueChange(sender: AnyObject)
+    {
+        tipPercentageLabel.text! = String(format: "Tip: %02d%%", arguments: [Int(tipPercentageSlider.value * 100)] )
+        calcTip()
+    }
 
 
 
