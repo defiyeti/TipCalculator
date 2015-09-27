@@ -2,9 +2,6 @@
 //  TipCalculatorViewController.swift
 //  TipCalculator
 //
-//  Created by Kunz Mainali on 6/3/15.
-//  Copyright (c) 2015 Kunz Mainali. All rights reserved.
-//
 
 import UIKit
 

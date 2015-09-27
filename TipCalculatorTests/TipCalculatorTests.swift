@@ -2,9 +2,6 @@
 //  TipCalculatorTests.swift
 //  TipCalculatorTests
 //
-//  Created by Kunz Mainali on 6/2/15.
-//  Copyright (c) 2015 Kunz Mainali. All rights reserved.
-//
 
 import UIKit
 import XCTest
